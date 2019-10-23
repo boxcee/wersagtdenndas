@@ -6,6 +6,6 @@ export default (req, res) => {
       res.send(quote);
     });
   } else {
-    res.end(Quote.findAll());
+    res.send(Quote.findAll());
   }
 }
