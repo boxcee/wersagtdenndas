@@ -1,12 +1,12 @@
-import { Quote } from '../../lib/sequelize';
+import db from '../../models/index';
 
 export default (req, res) => {
   if (req.method === 'POST') {
-    Quote.create(req.body).then(quote => {
+    db.Quote.create(req.body).then(quote => {
       res.send(quote);
     });
   } else {
-    Quote.findAll().then(quotes => {
+    db.Quote.findAll().then(quotes => {
       res.send(quotes);
     });
   }
