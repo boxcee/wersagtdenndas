@@ -1,14 +1,7 @@
-import { sequelize } from '../../lib/sequelize';
-
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log('Connection has been established successfully.');
-  })
-  .catch(err => {
-    console.error('Unable to connect to the database:', err);
-  });
+import { Quote } from '../../lib/sequelize';
 
 export default (req, res) => {
-  res.send('hello eran');
+  Quote.create({ content: 'hello eran', author: 'msc', source: 'hearsay' }).then(quote => {
+    res.send(quote);
+  });
 }
