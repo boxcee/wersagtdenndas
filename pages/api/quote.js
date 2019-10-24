@@ -1,8 +1,6 @@
 import db from '../../models/index';
-import auth from '../../lib/auth';
 
-export default auth((req, res, auth) => {
-  console.log(auth);
+export default (req, res) => {
   if (req.method === 'POST') {
     db.Quote.create(req.body).then(quote => {
       res.send(quote);
@@ -12,4 +10,4 @@ export default auth((req, res, auth) => {
       res.send(quotes);
     });
   }
-});
+};
