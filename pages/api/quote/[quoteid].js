@@ -6,7 +6,7 @@ export default validate((req, res) => {
   if (req.method === 'DELETE') {
     db.Quote
       .destroy({ where: { id: quoteid } })
-      .then(() => res.status(201).end())
+      .then(() => res.status(204).end())
       .catch(() => res.status(404).end());
   } else {
     db.Quote
