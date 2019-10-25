@@ -4,7 +4,7 @@ import Quote from '../components/quote'
 import fetch from "isomorphic-unfetch";
 import { getDomain } from "../utils/domain";
 
-const Home = props => (
+const Home = ({ quote }) => (
   <div>
     <Head>
       <title>wersagtdenndas</title>
@@ -16,7 +16,7 @@ const Home = props => (
     </div>
 
     <p className='quote'>
-      {props.quotes.map(quote => <Quote {...quote}/>)}
+      <Quote {...quote}/>
     </p>
 
     <style jsx>{`
@@ -47,10 +47,10 @@ const Home = props => (
 );
 
 Home.getInitialProps = async () => {
-  const res = await fetch(`${getDomain()}/api/quotes`);
-  const quotes = await res.json();
+  const res = await fetch(`${getDomain()}/api/quote/random`);
+  const quote = await res.json();
   return {
-    quotes
+    quote
   };
 };
 

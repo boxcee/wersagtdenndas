@@ -12,9 +12,7 @@ export default validate((req, res) => {
   } else {
     db.Quote
       .findAll()
-      .then(quotes => {
-        res.send(quotes);
-      })
+      .then(res.send)
       .catch(err => res.status(500).send(err));
   }
 });
