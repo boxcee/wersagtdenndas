@@ -10,6 +10,7 @@
   "dependencies": {
     "bcrypt": "^3.0.6",
     "dotenv": "^8.2.0",
+    "isomorphic-unfetch": "^3.0.0",
     "micro": "^9.3.4",
     "micro-compose": "0.0.3",
     "microauth-google": "0.0.1",

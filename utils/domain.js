@@ -1,7 +1,7 @@
-export const getDomain = (nodeEnv) => {
-  const dev = nodeEnv !== 'production';
+export const getDomain = () => {
+  const dev = process.env.NODE_ENV !== 'production';
   if (dev) {
-    return 'localhost:3000'
+    return 'http://localhost:3000'
   }
-  return 'wersagtdenndas.info';
+  return 'https://wersagtdenndas.info';
 };
