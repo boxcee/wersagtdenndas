@@ -3,5 +3,5 @@ export const getDomain = () => {
   if (dev) {
     return 'http://localhost:3000'
   }
-  return 'https://wersagtdenndas.info';
+  return 'http://www.wersagtdenndas.info';
 };
