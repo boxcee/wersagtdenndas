@@ -15,7 +15,7 @@
     "micro-compose": "0.0.3",
     "microauth-google": "0.0.1",
     "microauth-twitter": "^0.1.1",
-    "next": "9.1.1",
+    "next": "9.3.2",
     "passport": "^0.4.0",
     "passport-google-oauth": "^2.0.0",
     "pg": "^7.12.1",
