@@ -42,6 +42,10 @@ module.exports = {
               label: 'GitHub',
               href: 'https://github.com/boxcee/wersagtdenndas',
             },
+            {
+              label: 'Docusaurus',
+              href: 'https://v2.docusaurus.io/'
+            }
           ],
         },
       ],
