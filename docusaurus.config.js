@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   title: 'Wer sagt denn das?',
   tagline: 'Zitate die du kennen solltest.',
@@ -9,26 +11,17 @@ module.exports = {
   organizationName: 'boxcee', // Usually your GitHub org/user name.
   projectName: 'wersagtdenndas', // Usually your repo name.
   themeConfig: {
+    googleAnalytics: {
+      trackingID: 'G-GHMY1QFGYT',
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
+    },
     navbar: {
-      title: 'My Site',
+      title: 'Wer sagt denn das?',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
-      items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
+        src: 'img/question.gif',
+      }
     },
     footer: {
       style: 'dark',
@@ -102,4 +95,5 @@ module.exports = {
       },
     ],
   ],
+  plugins: [path.resolve(__dirname, 'database')]
 };
