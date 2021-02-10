@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{95:function(a){a.exports=JSON.parse('{"allTagsPath":"/wersagtdenndas/blog/tags","slug":"hello","name":"hello","count":2,"permalink":"/wersagtdenndas/blog/tags/hello"}')}}]);
