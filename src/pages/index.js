@@ -1,14 +1,12 @@
 import React from 'react';
 import clsx from "clsx";
 import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { usePluginData } from '@docusaurus/useGlobalData';
 import styles from './styles.module.css';
 
 function Home() {
-  const context = useDocusaurusContext();
-  const {zitat, autor, quelle, datum} = usePluginData('database');
-  const {siteConfig = {}} = context;
+  const quotes = usePluginData('database');
+  const {zitat, autor, quelle, datum} = quotes[Math.floor(Math.random() * quotes.length)];
   return (
     <Layout
       title={autor}
