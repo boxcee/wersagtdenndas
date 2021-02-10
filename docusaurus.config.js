@@ -30,8 +30,8 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Want to add a quote?',
-              href: 'https://github.com/boxcee/wersagtdenndas/edit/main/database/quotes.json',
+              label: 'Möchtest du ein Zitat hinzufügen?',
+              href: 'https://github.com/boxcee/wersagtdenndas/edit/main/database/zitate.json',
             },
           ],
         },

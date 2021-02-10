@@ -1,4 +1,4 @@
-const quotes = require('./quotes.json');
+const quotes = require('./zitate.json');
 
 module.exports = function () {
   return {

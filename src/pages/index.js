@@ -7,19 +7,19 @@ import styles from './styles.module.css';
 
 function Home() {
   const context = useDocusaurusContext();
-  const {quote, author, source, date} = usePluginData('database');
+  const {zitat, autor, quelle, datum} = usePluginData('database');
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={author}
+      title={autor}
       description="Zitate die du kennen solltest.">
       <main>
         <section className={styles.quote}>
           <div className="container">
             <div className="row">
               <div className={clsx('col col--4')}>
-                <h3>“{quote}“</h3>
-                <span>&mdash; <i><a href={source}>{author}{date ? `, ${date}` : ''}</a></i></span>
+                <h3>“{zitat}“</h3>
+                <span>&mdash; <i><a href={quelle}>{autor}{datum ? `, ${datum}` : ''}</a></i></span>
               </div>
             </div>
           </div>
