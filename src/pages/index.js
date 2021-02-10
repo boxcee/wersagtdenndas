@@ -1,7 +1,9 @@
 import React from 'react';
+import clsx from "clsx";
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { usePluginData } from '@docusaurus/useGlobalData';
+import styles from './styles.module.css';
 
 function Home() {
   const context = useDocusaurusContext();
@@ -9,11 +11,19 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={author}
+      description="Zitate die du kennen solltest.">
       <main>
-        <h3>{quote}</h3>
-        <span>{author}</span>
+        <section className={styles.quote}>
+          <div className="container">
+            <div className="row">
+              <div className={clsx('col col--4')}>
+                <h3>“{quote}“</h3>
+                <span>&mdash; <i><a href={source}>{author}{date ? `, ${date}` : ''}</a></i></span>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   );
