@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[22],{94:function(s){s.exports=JSON.parse('{"allTagsPath":"/wersagtdenndas/blog/tags","slug":"docusaurus","name":"docusaurus","count":3,"permalink":"/wersagtdenndas/blog/tags/docusaurus"}')}}]);
