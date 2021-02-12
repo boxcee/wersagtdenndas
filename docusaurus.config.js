@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  title: 'Wer sagt denn das?',
+  title: 'hat das gesagt!',
   tagline: 'Zitate die du kennen solltest.',
   url: 'https://wersagtdenndas.info',
   baseUrl: '/',
