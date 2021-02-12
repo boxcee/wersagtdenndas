@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
   title: 'Wer sagt denn das?',
   tagline: 'Zitate die du kennen solltest.',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/wersagtdenndas/',
+  url: 'https://wersagtdenndas.info',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/question.gif',
